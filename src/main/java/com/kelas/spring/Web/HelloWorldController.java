@@ -22,7 +22,6 @@ public class HelloWorldController {
     public ModelAndView sayHello(){
     	ModelAndView mav = new ModelAndView();
     	
-    	System.out.println("mpikame edw...gia na doume...");
     	mav.addObject("greeting", "Hello World from Spring 4 MVC");
     	mav.addObject("name", mainDao.findOne(1L));
     	mav.setViewName("welcome");
